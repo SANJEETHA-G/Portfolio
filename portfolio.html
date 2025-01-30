@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjeetha Gunasekaren | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #fff;
+        }
+        .about-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #00bcd4;
+    }
+
+    @media (max-width: 768px)
+    {
+        .about-container
+        {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+        }
+    }
+        header {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+        section {
+            padding: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+        .education-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .education-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .education-box:hover {
+            transform: scale(1.05);
+        }.achievements-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .achievement-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+            width: 300px;
+        }
+        .achievement-box:hover {
+            transform: scale(1.05);
+        }
+
+        .collapsible {
+            background-color: #00bcd4;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .active, .collapsible:hover {
+            background-color: #0288d1;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        /*.about {
+             display: flex;
+             align-items: center;
+             gap: 20px;
+             text-align: left;
+        }*/
+        .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+       .profile-photo {
+             width: 150px;
+             height: 200px;
+             border-radius: 100%; /* Makes the image circular */
+             object-fit: cover; /* Ensures the image covers the space properly */
+             border: 4px solid #00bcd4; /* Adds a colored border */
+             flex-shrink: 0; /* Prevents the image from resizing */
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #222;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sanjeetha Gunasekaren</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+        <img src="D:\CAMERA PHOTOS\IMG20231016104905.jpg" alt="Sanjeetha Gunasekaren" class="profile-photo">
+        <div class="about-text">
+        <p>I’m a second-year Electronics and Communication Engineering student at Sri Krishna College of Engineering and Technology. Passionate about technology, problem-solving, and coding, I aim to contribute to advancements in these fields through research and practical projects. I enjoy applying theoretical knowledge to solve real-world problems and have developed strong skills in teamwork, leadership, and communication.</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 style="text-align: center;">Education</h2>
+        <div class="education-container">
+            <div class="education-box">
+                <h2>Pursuing </h2>
+                <p>Currently pursuing a Bachelor's degree in Electronics and Communication Engineering at <b>Sri Krishna College of Engineering and Technology</b>. </p>
+            </div>
+
+            <div class="education-box">
+                <h2>Higher Secondary Education </h2>
+                <p>I completed my higher studies at <b>S.K.V Higher Secondary School </b>in the academic year 2022-2023, where I gained a solid foundation in various subjects.</p>
+            </div>
+
+            <div class="education-box">
+                <h2>Senior Secondary Education </h2>
+                <p>I completed my senior studies at <b>R.N Oxford Matriculation School </b>in the academic year 2020-2021.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <button class="collapsible">C++ Programming</button>
+        <div class="content">
+            <p>Proficient in C++ programming, I have worked on multiple projects utilizing the language for problem-solving and task automation.</p>
+        </div>
+
+        <button class="collapsible">Data Structures and Algorithms</button>
+        <div class="content">
+            <p>Skilled in various data structures and algorithms to enhance the efficiency and performance of programs.</p>
+        </div>
+
+        <button class="collapsible">Web Development (HTML, CSS)</button>
+        <div class="content">
+            <p>Experienced in web development using HTML and CSS to design and build responsive websites.</p>
+        </div>
+
+        <button class="collapsible">Problem Solving</button>
+        <div class="content">
+            <p>Passionate about solving complex problems through efficient algorithms and logical thinking.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Project</h2>
+        <ul>
+           <h1> CareArchiv</h1><br> A Secure Platform for Managing Patient Records
+
+As a team, we developed a project called CareArchiv, which aims to provide a secure and reliable way to store and access patient records. The platform allows patients to view their medical details after going through essential security checks. Our goal was to create a solution that ensures patient data is organized, up-to-date, and easily accessible, offering both security and convenience. This project is designed to help individuals manage their health records efficiently, providing them with a secure and user-friendly interface.<br><br>
+              <button> <a href="https://sanjeetha-g.github.io/CareArchiv/">View Project</a></button>
+                      </ul>
+    </section>
+
+    <section id="achievements">
+        <h2 style="text-align: center;">Achievements</h2>
+        <div class="achievements-container">
+            <div class="achievement-box">
+                <h3>Ideathon-TECHTIANS-2K24</h3>
+                <p>3rd Prize</p>
+            </div>
+            <div class="achievement-box">
+                <h3>IEEE R10 Young Professionals Upskill 2024</h3>
+                <p>Volunteer</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2025 Sanjeetha Gunasekaren</p>
+        <h2>Contact</h2>
+        <p>Mobile: 9003727173</p>
+        <p>Email: sanjeethagunasekaran@gmail.com</p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/sanjeetha</a></p>
+        <p>Github:<a href="#">Github.com/in/sanjeetha</a></p>
+    </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
